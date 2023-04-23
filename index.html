@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #random-num {
+            font-weight: 700;
+        }
+        #btn-click {
+            text-align: center;
+        }
+
+        .el1 {
+            width: 400px;
+            /* height: 40px; */
+            background-color: red;
+            padding: 10px 0;
+            
+        }
+
+        .el2 {
+            width: 30px;
+            height: 30px;
+            background-color: aqua;
+            position: relative;
+            left: 0%;
+        }
+        .el3 {
+            width: 30px;
+            height: 30px;
+            background-color: aqua;
+            position: relative;
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 
+    <div class="el1">
+        <span class="el2">text1</span>
+        <span class="el2 el3">text2</span>
+    </div> -->
+    
+    <!-- <input type="range" min="1" max="20" step="1" value="10" id="slider1"> -->
+    <input type="range" min="1" max="20" step="1" value="10" id="slider">
+    <p>Текущее значение диапазона: <span id="current-range"></span></p>
+    <p>рандомное число от 0 до 20: <span id="random-num"></span></p>
+    <input type="text" value="Random value" id="btn-click">
+    <script src="./main.js"></script>
+</body>
+</html>
