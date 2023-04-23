@@ -1,12 +1,15 @@
 const element = document.querySelector("#slider")
+const ele = document.querySelector("#slider1")
 const span = document.querySelector("#random-num");
 const btn = document.querySelector("#btn-click")
 const currentRange = document.querySelector("#current-range") 
+const cerrentRangeMin = document.querySelector("#current-range-min")
 
 btn.addEventListener("click", function() {
     let numMax = +element.value;
+    let numMin = +ele.value;
 
-    let min = 0;
+    let min = numMin;
     let max = numMax;
 
     let rangeNum = max - min + 1;
@@ -29,28 +32,36 @@ window.addEventListener("load", function() {
     currentRange.textContent = +element.value
 }) 
 
+ele.addEventListener("input", function() {
+    cerrentRangeMin.textContent = +ele.value
+})
+window.addEventListener("load", function() {
+    cerrentRangeMin.textContent = +ele.value
+}) 
+
 
 let arr = [
-    "Hello1",
-    "Hello2",
-    "Hello3",
-    "Hello4",
-    "Hello5",
-    "Hello6",
-    "Hello7",
-    "Hello8",
-    "Hello9",
-    "Hello10",
-    "Hello10",
-    "Hello10",
-    "Hello10",
-    "Hello10",
-    "Hello10",
-    "Hello10",
-    "Hello10",
-    "Hello10",
-    "Hello10",
-    "Hello777777",
+    "Номер 1",
+    "Номер 2",
+    "Номер 3",
+    "Номер 4",
+    "Номер 5",
+    "Номер 6",
+    "Номер 7",
+    "Номер 8",
+    "Номер 9",
+    "Номер 10",
+    "Номер 11",
+    "Номер 12",
+    "Номер 13",
+    "Номер 14",
+    "Номер 15",
+    "Номер 16",
+    "Номер 17",
+    "Номер 18",
+    "Hello 19",
+    "Номер 20",
+    "Номер 21"
 ]
 
 
